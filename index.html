@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Machine Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-container">
+        <!--=== Content part ===-->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Slot Machine Game - Let's Play!</h1>
+                        <h2>A simple JavaScript based HTML5 Slot Machine Game:</h2>
+                        <h3>User Interface/Functionality:</h3>
+                        <p>The screen has 3 boxes with nothing in them. When the user clicks on play, each box, one by one get populated by a random number between 0 to 9. If all the three boxes have the same number the user hits a jackpot/wins (gets a score) and the difficulty of the game increases, if not he can try again. With each difficulty level the score attained for winning increases in a parabolic fashion.</p>
+
+                        <h3>Notes:</h3>
+                        <ul>
+                            <li><strong>Slot Animation:</strong> Each of the boxes should emulate the spinning of a slot machine by quickly rotating the numbers before one steady value is populated.</li>
+                            <li><strong>Difficulty Level of the game:</strong> It is a number. Higher the number lower the probability of hitting the jackpot.</li>
+                            <li><strong>Winning Condition:</strong> All the 3 boxes show the same number.</li>
+                        </ul>
+                        <br/>
+                        <div>
+                            <p><strong>Score</strong>: <span id="score">0</span></p>
+                            <p><strong>Difficulty Level</strong>: <span id="difficulty">1</span></p>
+                        </div>
+                        <ul class="hidden slotDigits slotDigitsRef">
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                        </ul>
+                        <div id="slotPanel" class="clearfix">
+                            <ul class="slotDigits">
+                                <li></li>
+                            </ul>
+                            <ul class="slotDigits">
+                                <li></li>
+                            </ul>
+                            <ul class="slotDigits">
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <br/>
+                            <button type="button" class="btn btn-primary" id="play">Play</button>
+                        </div>
+                        <br/>
+                    </div><!--/col-sm-12 -->
+                </div><!--/row -->
+            </div><!--/container -->
+        </div><!--/content -->
+    </div><!--/page-container -->
+
+    <!-- JS and jQuery -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

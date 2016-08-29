@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#slotPanel {
+    overflow: hidden;
+    height: 85px;
+    display: inline-block;
+    background: #FFE5AA url("../images/blank-slot-machine.jpg") no-repeat left top;
+    background-size: 255px 85px;
+    border: 1px solid #75A782;
+}
+.slotDigits {
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    font-size: 45px;
+    font-size: 4.5rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+}
+.slotDigits li {
+    list-style-type: none;
+    height: 85px;
+}
+.slotDigits:first-child {
+    padding-left: 20px;
+}
+/* Not using last-child because of cross browser issues 
+   Instead directly targetting the third slot using adjacent sibling selector
+*/
+.slotDigits + .slotDigits + .slotDigits {
+    padding-right: 20px;
+}
